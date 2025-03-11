@@ -6,6 +6,20 @@ function Quiz() {
     const [ p2, alteraP2 ] = useState(0) 
     const [ total, alteraTotal ] = useState(0)
     const [ p3, alteraP3 ] = useState(0)
+    const [ p4, alteraP4 ] = useState("")
+    const [ p5, alteraP5 ] = useState(0)
+ 
+
+    function calculaPontos(){
+        if( p4 == "Yugioh"){
+
+            alteraP5( 1 )}
+        
+        alteraTotal(p1+p2+p3+p5)
+
+         
+}
+    
     
     return (
 
@@ -40,12 +54,12 @@ function Quiz() {
 
             <hr/>
 
-            <button onClick={ ()=> alteraTotal(p1+p2+p3)  } >Enviar respostas</button>
+            <button onClick={ ()=> calculaPontos()} >Enviar respostas</button>
             
             <p>Total de pontos: {total}</p>
             
             <h2>Qual é o melhor anime do mundo? </h2>
-            <input type="campo" ></input>
+            <label> <input onChange={(e)=> alteraP4 (e.target.value)  } /> </label>
 
             <hr/>
             <br/>
@@ -56,6 +70,8 @@ function Quiz() {
             <p onClick={ ()=>alteraP3(0) }>aaaa</p>
             <p onClick={ ()=>alteraP3(0) }>0</p>
             <p onClick={ ()=>alteraP3(0) }>6</p>
+
+                    
 
         </div>
         
