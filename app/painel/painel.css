@@ -1,0 +1,11 @@
+.erro{
+    color: rgb(7, 7, 7);
+    background-color: rgb(255, 199, 14);
+    padding: 10px;
+}
+
+.logado{
+    color: green;
+    background-color: aqua;
+    padding: 10px;
+}

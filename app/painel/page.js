@@ -1,14 +1,17 @@
 'use client'
 import { useState } from "react";
+import "./painel.css";
 
 function Painel(){
 
      const [usuario, alterarUsuario] = useState("")
      const [ senha, alterarSenha ] = useState("")
      const [ erro, SetError] = useState(false)
+     const [ logado, SetLogado] = useState(false)
 
      function entrar(){
         if( usuario == "conrado" && senha == "123"){    
+         SetLogado(true)
 
         }else{
             SetError(true)
@@ -44,8 +47,22 @@ function Painel(){
 
             <div></div>
             }
-    
 
+            { 
+            logado == true ?
+            <div className="logado" > 
+            <p>Logado com sucesso</p>
+            </div>
+            :
+            
+            <div></div>
+        
+        }
+
+
+
+
+            
             <button onClick={ ()=> entrar() }>  Entrar</button>
              </div>
         );
