@@ -5,6 +5,7 @@ function Quiz() {
     const [ p1, alteraP1 ] = useState(0)
     const [ p2, alteraP2 ] = useState(0) 
     const [ total, alteraTotal ] = useState(0)
+    const [ p3, alteraP3 ] = useState(0)
     
     return (
 
@@ -39,7 +40,7 @@ function Quiz() {
 
             <hr/>
 
-            <button onClick={ ()=> alteraTotal(p1+p2)  } >Enviar respostas</button>
+            <button onClick={ ()=> alteraTotal(p1+p2+p3)  } >Enviar respostas</button>
             
             <p>Total de pontos: {total}</p>
             
@@ -51,13 +52,10 @@ function Quiz() {
 
 
             <h2>Quanto é 2 vezes 2?</h2>
-            <div>
-                <ol>
-
-                </ol>
-            </div>
-
-
+            <p onClick={ ()=>alteraP3(1) }> 4</p>
+            <p onClick={ ()=>alteraP3(0) }>aaaa</p>
+            <p onClick={ ()=>alteraP3(0) }>0</p>
+            <p onClick={ ()=>alteraP3(0) }>6</p>
 
         </div>
         
