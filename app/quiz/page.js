@@ -66,12 +66,14 @@ function Quiz() {
 
 
             <h2>Quanto é 2 vezes 2?</h2>
-            <p onClick={ ()=>alteraP3(1) }> 4</p>
+            <p onClick={ ()=>alteraP3(1) }>4</p>
             <p onClick={ ()=>alteraP3(0) }>aaaa</p>
             <p onClick={ ()=>alteraP3(0) }>0</p>
             <p onClick={ ()=>alteraP3(0) }>6</p>
 
-                    
+            
+
+
 
         </div>
         
